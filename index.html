@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Орхідея — студія квітів та подарунків</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Script&family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader" aria-label="Головна навігація">
+    <div class="header-inner">
+      <div class="logo" id="logoText">Орхідея</div>
+      <nav class="main-nav" role="navigation" aria-label="Головне меню">
+        <a href="#home">Головна</a>
+        <a href="#asortyment">Асортимент</a>
+        <a href="#weddings">Весілля</a>
+        <a href="#about">Про нас</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn-ghost" href="https://t.me/username_here" target="_blank" rel="noopener">Замовити у Telegram</a>
+        <button class="burger" id="burgerBtn" aria-label="Відкрити меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="sheet" role="menu" aria-label="Мобільне меню">
+      <a href="#home" onclick="closeMobile()">Головна</a>
+      <a href="#asortyment" onclick="closeMobile()">Асортимент</a>
+      <a href="#weddings" onclick="closeMobile()">Весілля</a>
+      <a href="#about" onclick="closeMobile()">Про нас</a>
+      <a href="#contacts" onclick="closeMobile()">Контакти</a>
+      <a href="https://t.me/username_here" target="_blank" rel="noopener">Написати в Telegram</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero" role="banner" aria-label="Головний екран">
+      <div class="hero-inner">
+        <h1 class="league-script-regular">Orchidea</h1>
+        <div class="hero-cta">
+          <p class="poiret-one-regular">квіти та декор | свята й події</p>
+        </div>
+      </div>
+<!-- Scroll Button -->
+<button class="scroll-hint" data-target="#asortyment" aria-label="Прокрутити вниз">
+  <svg width="72" height="72" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M6 9l6 6 6-6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+
+    </section>
+
+    <!-- SECTION 2: COLLAGE -->
+    <section id="asortyment" class="section" aria-labelledby="asortTitle">
+      <div class="section-inner">
+        <div class="collage">
+          <!-- LEFT: bleed collage -->
+          <div class="collage-left" aria-hidden="false">
+            <div class="pic p1" aria-hidden="true"></div>
+            <div class="pic p2" aria-hidden="true"></div>
+            <div class="pic p3" aria-hidden="true"></div>
+          </div>          
+          <!-- RIGHT: plum text box -->
+          <aside class="plum-box" role="complementary" aria-labelledby="plumTitle">
+            <h3 id="plumTitle">Там, де квіти говорять більше, ніж слова</h3>
+            <p>Орхідея — це місце, де ми оживляємо події через флористику та декор. Ми робимо авторські букети, великий декор для весіль та індивідуальні подарункові набори.</p>
+            <p>Наша команда — професійні флористи, що підбирають матеріали з увагою до кольору і форми. Напишіть в Telegram, щоб отримати швидку пропозицію під вашу подію.</p>
+            <div class="cta-row" style="margin-top:auto">
+              <a class="pink-btn" href="https://t.me/username_here" target="_blank" rel="noopener">Замовити в Telegram</a>
+            </div>
+        </aside> 
+    </div> 
+    </div> 
+    </section> 
+    
+       <!-- REPLACED SECTION 3: PARALLAX with 4 feature boxes -->
+       <section class="parallax-section" aria-label="Переваги">
+        <div class="parallax-inner">
+          <div class="feature-row" role="list">
+            <div class="feature" role="listitem">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                <path d="M4 20v-1a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v1"/>
+              </svg>
+              <div>
+                <h4>Індивідуальний підхід</h4>
+                <p>Кожен букет створюється з любов'ю та з урахуванням усіх деталей, щоб вийшла ідеальна композиція.</p>
+              </div>
+            </div>
+      
+            <div class="feature" role="listitem">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 7h18"/><path d="M5 7v10a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V7"/>
+              </svg>
+              <div>
+                <h4>Тільки свіжі квіти</h4>
+                <p>Співпрацюємо з надійними постачальниками, щоб кожна квітка була свіжою та тішила довго.</p>
+              </div>
+            </div>
+      
+            <div class="feature" role="listitem">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 10h18v6H3z"/><path d="M5 6h14v2H5z"/>
+              </svg>
+              <div>
+                <h4>Швидка доставка</h4>
+                <p>Привеземо букет у зручний для вас час, аби створити ідеальний момент радості.</p>
+              </div>
+            </div>
+      
+            <div class="feature" role="listitem">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2l3 6 6 .5-4.5 3.5L19 21l-7-4-7 4 1.5-8.5L2 8.5 8 8z"/>
+              </svg>
+              <div>
+                <h4>Сучасний дизайн</h4>
+                <p>Ми слідкуємо за трендами флористики — букети завжди елегантні та унікальні.</p>
+              </div>
+            </div>
+          </div>
+      
+          <div class="cta-wrapper">
+            <a class="pink-btn" href="https://t.me/username_here">Замовити квіти</a>
+          </div>
+        </div>
+      </section>
+      
+  <!-- GALLERY: вставити у потрібне місце сторінки -->
+<section id="gallery-section" class="gallery-section">
+  <h2 class="visually-hidden">Галерея</h2>
+
+  <div class="gallery masonry-gallery" id="photoGallery">
+    <!-- Приклад 12 фотографій; заміни src на свої файли -->
+    <figure class="photo">
+      <button class="photo-btn" data-index="0" aria-label="Відкрити фото 1">
+        <img src="pics/gallerypic1.jpg" alt="Фото 1">
+        <span class="overlay" aria-hidden="true"></span>
+      </button>
+    </figure>
+
+    <figure class="photo">
+      <button class="photo-btn" data-index="1" aria-label="Відкрити фото 2">
+        <img src="pics/gallerypic2.jpg" alt="Фото 2">
+        <span class="overlay" aria-hidden="true"></span>
+      </button>
+    </figure>
+
+    <!-- ... і так далі до 12 -->
+    <figure class="photo"><button class="photo-btn" data-index="2" aria-label="Фото 3"><img src="pics/gallerypic3.jpg" alt="Фото 3"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="3" aria-label="Фото 4"><img src="pics/gallerypic4.jpg" alt="Фото 4"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="4" aria-label="Фото 5"><img src="pics/gallerypic5.jpg" alt="Фото 5"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="5" aria-label="Фото 6"><img src="pics/gallerypic6.jpg" alt="Фото 6"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="6" aria-label="Фото 7"><img src="pics/gallerypic7.jpg" alt="Фото 7"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="7" aria-label="Фото 8"><img src="pics/gallerypic8.jpg" alt="Фото 8"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="8" aria-label="Фото 9"><img src="pics/gallerypic9.jpg" alt="Фото 9"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="9" aria-label="Фото 10"><img src="pics/gallerypic10.jpg" alt="Фото 10"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="10" aria-label="Фото 11"><img src="pics/gallerypic11.jpg" alt="Фото 11"><span class="overlay"></span></button></figure>
+    <figure class="photo"><button class="photo-btn" data-index="11" aria-label="Фото 12"><img src="pics/gallerypic12.jpg" alt="Фото 12"><span class="overlay"></span></button></figure>
+  </div>
+</section>
+
+<!-- LIGHTBOX (динамічно показується тільки на не-мобайлі) -->
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Перегляд фотографії">
+  <button class="lb-close" aria-label="Закрити (Esc)">&times;</button>
+  <button class="lb-prev" aria-label="Попереднє фото" title="Попереднє">‹</button>
+  <div class="lb-wrap">
+    <img id="lbImage" src="" alt="">
+  </div>
+  <button class="lb-next" aria-label="Наступне фото" title="Наступне">›</button>
+</div>
+    
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<!-- REVIEWS SECTION -->
+<section id="reviews" class="reviews-section" aria-labelledby="reviews-title">
+  <div class="reviews-inner">
+    <div class="reviews-header">
+      <h2 id="reviews-title">Добре</h2>
+      <div class="rating-summary" aria-hidden="false">
+        <div class="rating-stars" id="avgStars" aria-hidden="true"></div>
+        <div class="rating-meta"><span id="avgValue"></span> · <span id="reviewsCount"></span> рецензії</div>
+      </div>
+    </div>
+
+    <div class="reviews-carousel-wrap">
+      <button class="rc-btn rc-prev" aria-label="Попередні відгуки">‹</button>
+
+      <div class="reviews-carousel" id="reviewsCarousel" aria-live="polite">
+        <!-- slides will be injected here by JS -->
+      </div>
+
+      <button class="rc-btn rc-next" aria-label="Наступні відгуки">›</button>
+    </div>
+
+    <div class="reviews-dots" id="reviewsDots" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section id="where-to-find" class="where-section" aria-labelledby="where-title">
+  <div class="where-inner">
+    <!-- Ліва колонка: текст -->
+    <div class="where-left">
+      <h2 id="where-title" class="where-title">Де нас знайти</h2>
+
+      <p class="where-sub">
+        Найкращі квіти у місті Чортків — обирайте та замовляйте букет в пару кліків. 
+        Приїдемо, упакуємо з любов'ю і доставимо швидко.
+      </p>
+
+      <div class="store-list" aria-label="Список магазинів">
+        <div class="store">
+          <div class="store-head">
+            <!-- іконка місця -->
+            <svg class="icon icon-pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6-7.5-6-11a6 6 0 1 1 12 0c0 3.5-6 11-6 11z"/><circle cx="12" cy="10" r="2" fill="currentColor"/></svg>
+            <div>
+              <div class="store-city">м. Чортків</div>
+              <div class="store-address">вул. Шевченка, 12</div>
+            </div>
+          </div>
+          <a class="store-phone" href="tel:+380503773737">📞 +38 050 377 3737</a>
+        </div>
+
+        <div class="store">
+          <div class="store-head">
+            <svg class="icon icon-pin" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6-7.5-6-11a6 6 0 1 1 12 0c0 3.5-6 11-6 11z"/><circle cx="12" cy="10" r="2" fill="currentColor"/></svg>
+            <div>
+              <div class="store-city">м. Чортків</div>
+              <div class="store-address">вул. Степана Бандери, 9</div>
+            </div>
+          </div>
+          <a class="store-phone" href="tel:+380980000282">📞 +38 098 000 0282</a>
+        </div>
+      </div>
+
+      <div class="where-contact">
+        <!-- невеликий підпис під списком -->
+        <span class="where-note">Працюємо щодня: 09:00 — 20:00</span>
+      </div>
+    </div>
+
+    <!-- Права колонка: карта -->
+    <div class="where-right" aria-hidden="false">
+      <div id="map" class="map-canvas" role="application" aria-label="Карта з розташуванням магазинів"></div>
+    </div>
+  </div>
+</section>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Contacts -->
+    <section id="contacts" class="section" aria-labelledby="contactsTitle"> 
+      <div class="section-inner" style="padding-top:28px"> 
+        <h3 id="contactsTitle">Контакти</h3> 
+        <p class="muted">Телефон: <a href="tel:+380XXXXXXXXX">+38 (0XX) XXX-XX-XX</a> • Telegram: <a href="https://t.me/username_here" target="_blank" rel="noopener">@username_here</a></p> 
+      </div> 
+    </section> 
+    </main> 
+    
+    <footer> 
+      <div class="footer-inner"> 
+        <div>© <span id="year"></span> Орхідея</div> 
+        <div class="muted">Чортків — Студія квітів та подарунків</div> 
+      </div> 
+    </footer> 
+    
+    <script src="script.js"></script>
+    </body> 
+    </html>
+    
