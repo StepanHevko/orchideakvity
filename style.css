@@ -129,7 +129,7 @@ color:#fff;
 content:"";
 position:absolute;
 inset:0;
-background-image: url('../pics/testhero.jpg');
+background-image: url('pics/testhero.jpg');
 background-position: center;
 background-size: cover;
 opacity: 1; /* замість 0.07 */
